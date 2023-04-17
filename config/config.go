@@ -17,8 +17,8 @@ func NewServer() *ServerConfig {
 	return &ServerConfig{
 		Server:   getEnv("SERVER", ""),
 		Port:     getPortEnv("PORT", 22),
-		Username: getEnv("USERNAME", "root"),
-		KeyPath:  getEnv("KEY_PATH", "/Users/bujikuh/.ssh/id_rsa"),
+		Username: getEnv("USERNAME", ""),
+		KeyPath:  getEnv("KEY_PATH", ""),
 		Password: getEnv("PASSWORD", ""),
 	}
 }
